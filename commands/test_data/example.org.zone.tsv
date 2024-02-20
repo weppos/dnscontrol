@@ -170,6 +170,7 @@ example.org	@	7200	IN	CAA	0 issue "letsencrypt.org; accounturi=https://acme-v01.
 example.org	@	7200	IN	CAA	0 issue "letsencrypt.org; accounturi=https://acme-staging-v02.api.letsencrypt.org/acme/acct/23456789"
 example.org	@	7200	IN	CAA	0 issue "letsencrypt.org; accounturi=https://acme-v02.api.letsencrypt.org/acme/acct/76543210"
 example.org	@	7200	IN	CAA	0 issuewild ";"
+example.org	@	7200	IN	CAA	0 issuemail ";"
 example.org	@	7200	IN	CAA	0 iodef "mailto:security@example.org"
 _ourcaca4-tlsa.example.org	_ourcaca4-tlsa	7200	IN	TLSA	2 0 1 ea99063a0a3bda9727032cf82da238698b90ba729300703d3956943635f96488
 _ourcaca5-tlsa.example.org	_ourcaca5-tlsa	7200	IN	TLSA	2 0 1 11f058f61f97b8adc66ef4801f918c71b10e5c1e3d39afde10408b3026647ef1

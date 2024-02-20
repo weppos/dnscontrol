@@ -496,6 +496,7 @@ www.ipv6	CNAME	services.ipv6
 @		CAA	0	issue "letsencrypt.org\; accounturi=https://acme-v02.api.letsencrypt.org/acme/acct/76543210"
 ;@		CAA	0	issue "amazonaws.com"
 @		CAA	0	issuewild ";"
+@		CAA	0	issuemail ";"
 @		CAA	0	iodef "mailto:security@example.org"
 
 ; Zone Identity Services }}}

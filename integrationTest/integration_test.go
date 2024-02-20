@@ -1398,6 +1398,7 @@ func makeTests(t *testing.T) []*TestGroup {
 			tc("CAA change target", caa("@", "issuewild", 0, "example.com")),
 			tc("CAA change flag", caa("@", "issuewild", 128, "example.com")),
 			tc("CAA many records", caa("@", "issuewild", 128, ";")),
+			tc("CAA mail records", caa("@", "issuemail", 0, ";")),
 			// Test support of spaces in the 3rd field. Some providers don't
 			// support this.  See providers/exoscale/auditrecords.go as an example.
 			tc("CAA whitespace", caa("@", "issue", 0, "letsencrypt.org; validationmethods=dns-01; accounturi=https://acme-v02.api.letsencrypt.org/acme/acct/1234")),

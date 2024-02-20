@@ -7,7 +7,7 @@ parameters:
   - modifiers...
 parameter_types:
   name: string
-  tag: '"issue" | "issuewild" | "iodef"'
+  tag: '"issue" | "issuewild" | "issuemail" | "iodef"'
   value: string
   "modifiers...": RecordModifier[]
 ---
@@ -17,6 +17,7 @@ parameter_types:
 Tag can be one of
 1. `"issue"`
 2. `"issuewild"`
+2. `"issuemail"`
 3. `"iodef"`
 
 Value is a string. The format of the contents is different depending on the tag. DNSControl will handle any escaping or quoting required, similar to TXT records. For example use `CAA("@", "issue", "letsencrypt.org")` rather than `CAA("@", "issue", "\"letsencrypt.org\"")`.
@@ -31,6 +32,8 @@ D("example.com", REG_MY_PROVIDER, DnsProvider(DSP_MY_PROVIDER),
   CAA("@", "issue", "letsencrypt.org"),
   // Allow no CA to issue wildcard certificate for this domain
   CAA("@", "issuewild", ";"),
+  // Allow no CA to issue S/MIME certificate for this domain
+  CAA("@", "issuemail", ";"),
   // Report all violation to test@example.com. If CA does not support
   // this record then refuse to issue any certificate
   CAA("@", "iodef", "mailto:test@example.com", CAA_CRITICAL)

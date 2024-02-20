@@ -14,6 +14,7 @@ $TTL 7200
                  IN CAA   0 issue "letsencrypt.org; accounturi=https://acme-staging-v02.api.letsencrypt.org/acme/acct/23456789"
                  IN CAA   0 issue "letsencrypt.org; accounturi=https://acme-v01.api.letsencrypt.org/acme/reg/1234567"
                  IN CAA   0 issue "letsencrypt.org; accounturi=https://acme-v02.api.letsencrypt.org/acme/acct/76543210"
+                 IN CAA   0 issuemail ";"
                  IN CAA   0 issuewild ";"
 0123456789abcdef0123456789abcdef IN CNAME verify.bing.com.
 _acme-challenge 15 IN CNAME _acme-challenge.chat-acme.d.example.net.
